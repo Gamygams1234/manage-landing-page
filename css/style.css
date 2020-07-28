@@ -15,7 +15,22 @@
 --very-dark-blue: hsl(233, 12%, 13%);
 --very-pale-red: hsl(13, 100%, 96%);
 --vary-light-gray: hsl(0, 0%, 98%);
+
+
+/* ### Logo Colours */
+--text-primary: hsl(228, 39%, 23%);
+--object-primary: hsl(12, 88%, 59%);
 }
+
+
+.a-text {
+  fill: var(--text-primary);
+}
+
+.a-object {
+  fill: var(--object-primary);
+}
+
 .page {
   margin: 0;
   padding: 0;
