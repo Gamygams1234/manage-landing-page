@@ -1,3 +1,55 @@
+const testimonials = document.querySelectorAll('.card._testimonials');
+
+
+    let slider = document.createElement('div');
+    slider.classList.add('slider', '_testimonials')
+
+    testimonials[0].parentNode.insertAdjacentElement('afterend', slider);
+
+for (let i = 0; i < testimonials.length; i++) {
+
+    let sliderCircle = document.createElement('div');
+
+    if (testimonials[i].classList.contains('-active'))
+        sliderCircle.classList.add('circle', '_slider', '-active');
+    else
+        sliderCircle.classList.add('circle', '_slider');
+
+    slider.insertAdjacentElement('beforeend', sliderCircle);
+}
+/*
+for (let i = 0; i < testimonials.length; i++) {
+    delay(i);
+}
+
+function delay(i) {
+    setTimeout(() => {
+        console.log(i)
+    }, 1000 * (i + 1));
+}
+
+
+
+for (var i = 0; i < 5; i++) {
+    let k = i;
+    setTimeout(function () {
+        console.log('count ', k);
+    }, 3000 * (k + 1));
+}
+*/
+if (!(window.innerWidth < 1439)) {
+    slider.style.display = 'none';
+}
+
+
+
+
+
+
+
+
+
+
 function formCheck(event) {
     for (let i = 0; i < formItem.length; i++) {
         console.log(formItem[i].checkValidity())
