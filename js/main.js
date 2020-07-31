@@ -37,7 +37,7 @@ for (var i = 0; i < 5; i++) {
     }, 3000 * (k + 1));
 }
 */
-if (!(window.innerWidth < 1439)) {
+if (!(window.innerWidth < 1200)) {
     slider.style.display = 'none';
 }
 
