@@ -950,6 +950,7 @@
   /* start article - testimonials */
   .wrapper.-testimonials {
     margin-top: 99px;
+    -webkit-mask-image: linear-gradient(to right, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 95%);
     mask-image: linear-gradient(to right, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 95%);
   }
 
